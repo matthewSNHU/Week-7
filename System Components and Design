@@ -1,0 +1,130 @@
+#CS 255 Business Requirements Document Template
+
+System Components and Design
+Purpose
+What is the purpose of this project? Who is the client and what do they want their system to be able to do?
+•	The purpose of the project is to design a system to provide online practice tests, training scheduling, and admin tools for instructors and IT staff
+•	The client is DriverPass company wanting to help better prep students for tests and exams
+•	The system is suppose to support customers, instructors, admin, and IT staff. Giving access to scheduling, online resources to help students
+
+System Background
+What does DriverPass want the system to do? What is the problem they want to fix? What are the different components needed for this system?
+•	DriverPass wants the system to provide updated, state accurate practice exams, allow students to schedule driving lessons with instructors, give staff and IT access to manage the system. 
+•	The problems they want to fix is they see over %65 of students fail the DMV driving exam with limited resources and lack of in person instructors
+•	The different components needed for this system would be user account management (for the students, instructors and administrators), online testing modules with random questions and scoring to help them not try to memorize answers but learn the material, scheduling system to help with on the road lessons, multiple package options to purchase, instructor tools for lesson notes availability and the students progress, admin dashboards and secure database to store all the system data into. 
+
+Objectives and Goals
+What should this system be able to do when it is completed? What measurable tasks need to be included in the system design to achieve this?
+•	The system should be able to allow students to access updates, state accurate practice exams, schedule lessons with instructors per their availability. 
+•	The measurable tasks that need to be included are creating accounts, allow purchasing of packages
+•	The system must give at least 5 full practice exams with random questions and scoring, allowing students to schedule and cancel lessons with an updated system on instructors real time
+
+Requirements
+Nonfunctional Requirements
+In this section, you will detail the different nonfunctional requirements for the DriverPass system. You will need to think about the different things that the system needs to function properly.
+
+Performance Requirements
+What environments (web-based, application, etc.) does this system need to run in? How fast should the system run? How often should the system be updated?
+•	The system will need to run as a web based application so the customers can take practice tests and schedule lessons without delay or miscommunication. 
+•	The system should run fast loading pages quickly and consistently especially during business hours to update scheduling in real time. 
+•	The system should be updated when the DMV questions change, or daily as instructors change availability, or new instructor become available. There should be a steady update on the scheduling system but with the questions there should be when the DMV system tries to change then the system should change accordingly to continue to support the driver students exams. 
+
+Platform Constraints
+What platforms (Windows, Unix, etc.) should the system run on? Does the back end require any tools, such as a database, to support this application?
+•	The system should run on any platform that supports a web browser, DriverPass wants a fully web based system so like Mac, Windows, and Linux because users and staff will most likely use different devices to access. 
+•	The back end needs database to store user accounts, schedules, test questions, and packages as mentioned by Ian in the interview 
+•	The back end needs to support secure data storage for the customer info and training records
+•	There needs to be a support for admin access so IT can update content and maintain the system as time goes on and programs update. 
+
+Accuracy and Precision
+How will you distinguish between different users? Is the input case-sensitive? When should the system inform the admin of a problem?
+•	The system will distinguish a user by each person having a unique username and or email
+•	Each user will have a specific role that determined what they are even able to access in the system
+•	The input case on passwords will need to be case sensitive but generally every user input does not need to be sensitive 
+•	The system should inform an admin when there is a repeated failed log in attempt or sus act.
+•	The system should inform an admin when there is a scheduling conflict
+•	If there is a problem updating the test questions seeing as the DMV content changes 
+•	When there are system error that prevent someone from being able to access the lessons or practice tests to help them become successful 
+
+Adaptability 
+Can you make changes to the user (add/remove/modify) without changing code? How will the system adapt to platform updates? What type of access does the IT admin need? 
+•	Yes you can make changes to the user without changing code, as Ian says in the interview
+•	The system will adapt to platform updates by being fully web based and the updates on windows, mac, linux, or mobile devices will not need coded changes so the standar web tech will continue to work as browser updates. 
+•	The IT admin will need full access to the system settings so they can maintain and update the system
+•	The IT admin needs to be able to update test questions, scheduling, and user information through the admin tool 
+•	The IT will need all of the access to keep the system updated to DMV test questions, user information’s or problems in the system needing help to solve. 
+
+Security
+What is required for the user to log in? How can you secure the connection or the data exchange between the client and the server? What should happen to the account if there is a “brute force” hacking attempt? What happens if the user forgets their password? 
+•	to log in you need unique user name/email and a password
+•	The system should use a secure web connection to protect data exchange between the client and the server, passwords will need to be encrypted
+•	The system should lock the account if too many failed due to a brute force hacking attempt
+•	Once failed login attempts the admin should be notified and the user should receive a security alert so they know their account is at risk or they failed and need help to reset their account info
+•	The system should give a password reset option through email verification
+•	The user needs to confirm their identity before creating a new password
+•	The system should ensure that the reset is secured and protected from anyone else than the user 
+
+Functional Requirements
+Using the information from the scenario, think about the different functions the system needs to provide. Each of your bullets should start with “The system shall . . .” For example, one functional requirement might be, “The system shall validate user credentials when logging in.”
+•	The system shall validate user information when logging in 
+•	The system shall allow students to create a account 
+•	The system shall allow students to purchase training packages 
+•	The system shall allow students to schedule, reschedule, and cancel driving lessons 
+•	The system shall allow instructors to view their schedules and update their schedule/availability 
+•	The system shall allow administrators to add, remove, and modify user accounts 
+•	The system shall provide students with access to online practice tests
+•	The system shall update practice test questions when the DMV changes their own exams or content
+•	The system shall allow instructors to record student updates and progress in lessons 
+•	The system shall allow admin to manage training packages and pricing
+•	The system shall send notifications to users for scheduling changes or updates
+•	The system shall store all users, schedule, and test data in a secure database
+•	The system shall give role based access see each user only access their needs
+•	The system shall allow students to view their lesson history and practice test results
+•	The system shall allow IT staff to update system content without modifying the code
+
+User Interface
+What are the needs of the interface? Who are the different users for this interface? What will each user need to be able to do through the interface? How will the user interact with the interface (mobile, browser, etc.)? 
+•	The interface must be easy to use for students, instructors and IT staff
+•	The interface must allow access to everyone per their needs. 
+•	The different users for this interface are students, instructors, administrators, IT admin
+•	Student need to be able to view their accounts, purchase training packages, schedule, test online, and view history in their results and progress, 
+•	The instructors will need view scheduling, update availability, record student progress and lesson completion
+•	The Admin will need tro be able to add, remove, modify, manage training packages, viewing system activity and reports
+•	The IT admin will need ot be able to access and update system content from questions to schedulings and user data. 
+•	IT admin will need to maintain functionality without changing the code, giving them access to backend tools for troubleshooting
+
+Assumptions
+What things were not specifically addressed in your design above? What assumptions are you making in your design about the users or the technology they have? 
+•	The things not addressed in the design are assumed all users have access to a device with modern web browser
+•	The system assumes users have a stable internet connection 
+•	The system assumes the students instructors, admin and IT staff understand basic computer use. 
+•	The system assumes DriverPass will provide accuratre and up to date DMV test content for practice testing. 
+•	The system assumes the instructors will keep their availability updated so scheduling remains accurate and up to date as much as possible and early as possible. 
+
+Limitations
+Any system you build will naturally have limitations. What limitations do you see in your system design? What limitations do you have as far as resources, time, budget, or technology?
+•	The limitations I see in the system design is it is limited by being fully web based as it cannot function without an internet connection 
+•	The system depends on the browser compatibility so the unexpected browser updates may affect performance 
+•	The system relies on instructors up to date availability helping secure accurate schedules
+•	The system is limited to the DMV updates and content changes giving practice tests
+•	The system is limited by DMV updates frequency as their changes to their content oftem happen faster than updates are applied and practice tests then become temporarily outdated
+•	The system is limited by server and database performance which may affect response times
+
+Gantt Chart
+Please include a screenshot of the GANTT chart that you created with Lucidchart. Be sure to check that it meets the plan described by the characters in the interview.
+
+ TASK 					                                   	Start Date 				End Date 
+Collect Requirements	                                  Jan 22      	Feb 4 
+Create Use Case Diagrams	                              Feb 11      	Feb 18 
+Build Activity Diagrams for Each Use Case              	Feb 15	      Mar 9 
+Research User Interface Designs	                        Feb 27      	Mar 7 
+Build Class Diagram                              	      Mar 1	        Mar 9
+Get Customer Approval	                                  Mar 10      	Mar 11
+Build Interface	                                        Mar 12	      Mar 24
+Link DB to Interface                                   	Mar 24      	Apr 3
+Build Business Logic                                    Apr 5       	Apr 27
+Test System	                                            Apr 27      	May 7
+Deliver System                                         	May 8       	May 9 
+Sign-off Meeting	                                      May 9       	May 10
+
+ 
